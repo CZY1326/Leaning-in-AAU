@@ -66,7 +66,7 @@
 
 1. **推荐：Pull Request**：Fork 仓库 → 上传文件 → 发起 PR，等维护者合并。
 2. **不会 Fork：Issue**：在 Issues 里发“资料投稿”，把文件拖进正文，维护者代传。
-3. **不想公开：邮件**：发到 [zhang.x.w@ahau.edu.cn](mailto:zhang.x.w@ahau.edu.cn)，维护者代传。
+3. **不想公开：邮件**：发到 [zhang.x.w@ahau.edu.cn](mailto:zhang.x.w@stu.ahau.edu.cn)，维护者代传。
 
 > 通过 Issue 或邮件投稿时，写一下你的 GitHub 用户名/昵称（没有就写希望怎么署名），方便记到“贡献者”名单里。先看看仓库里有没有重复或过期资料。
 
