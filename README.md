@@ -1,9 +1,14 @@
 # 安徽农业大学课程资料共享计划
 
-**Leaning in AAU** · 安农学子专属的资料库。
+**Leaning in AAU** · 安农学子专属的资料库
 
 > 这是一个由同学自发维护的**非官方**仓库，不是安徽农业大学官方项目。  
 > 仓库永久免费；如果有人拿这里的资料收费、倒卖，请直接拒绝。
+
+
+> 🌐 网页版（不用登录，可直接浏览下载）：https://aau-course.pages.dev
+> 备用：https://lastwejust.github.io/Leaning-in-AAU/
+
 
 ## 10 秒上手
 
