@@ -41,31 +41,160 @@
 }
 
 [data-md-color-scheme="aau-dark"] {
-  --md-primary-fg-color:        #BAD8E6;
-  --md-primary-fg-color--light: #CFE4EE;
-  --md-primary-fg-color--dark:  #8FBECF;
-  --md-primary-bg-color:        #16222B;
-  --md-primary-bg-color--light: rgba(22, 34, 43, 0.7);
+  color-scheme: dark;
+
+  --md-primary-fg-color:        #1E4260;
+  --md-primary-fg-color--light: #2C5878;
+  --md-primary-fg-color--dark:  #16324A;
+  --md-primary-bg-color:        #F1ECDC;
+  --md-primary-bg-color--light: rgba(241, 236, 220, 0.72);
 
   --md-accent-fg-color:         #D9A56E;
-  --md-accent-fg-color--transparent: rgba(217, 165, 110, 0.12);
+  --md-accent-fg-color--transparent: rgba(217, 165, 110, 0.14);
 
   --md-default-bg-color:        #16222B;
-  --md-default-bg-color--light: #1C2B35;
-  --md-default-fg-color:        #E7E2D3;
-  --md-default-fg-color--light: #C3C9C4;
-  --md-default-fg-color--lighter: #97A3A5;
+  --md-default-bg-color--light: #1B2A34;
+  --md-default-fg-color:        #E9E4D6;
+  --md-default-fg-color--light: #C9CFC9;
+  --md-default-fg-color--lighter: #9AA6A6;
   --md-default-fg-color--lightest: #2E3F49;
 
-  --md-typeset-a-color:         #BAD8E6;
-  --md-code-bg-color:           #1F2F39;
-  --md-code-fg-color:           #E7E2D3;
+  --md-typeset-color:           #E9E4D6;
+  --md-typeset-a-color:         #A9CBE0;
+  --md-code-bg-color:           #22323E;
+  --md-code-fg-color:           #E9E4D6;
   --md-footer-bg-color:         #101A21;
   --md-footer-bg-color--dark:   #0C151A;
 
   --aau-note-bg:   #1B2A34;
   --aau-warn-bg:   #2A2419;
   --aau-danger-bg: #2B1D1A;
+}
+
+/* 深色模式：正文、标题、表格、代码强制浅色，避免继承到浅色主题的深色文字 */
+[data-md-color-scheme="aau-dark"] .md-typeset {
+  color: #E9E4D6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset h1,
+[data-md-color-scheme="aau-dark"] .md-typeset h2,
+[data-md-color-scheme="aau-dark"] .md-typeset h3,
+[data-md-color-scheme="aau-dark"] .md-typeset h4,
+[data-md-color-scheme="aau-dark"] .md-typeset h5,
+[data-md-color-scheme="aau-dark"] .md-typeset h6 {
+  color: #F6F2E6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset p,
+[data-md-color-scheme="aau-dark"] .md-typeset li,
+[data-md-color-scheme="aau-dark"] .md-typeset dd,
+[data-md-color-scheme="aau-dark"] .md-typeset td {
+  color: #E9E4D6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset a {
+  color: #A9CBE0;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset a:hover {
+  color: #EFC08D;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset table:not([class]) {
+  background: #1B2A34;
+  border-color: #2E3F49;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset table:not([class]) th {
+  background: #22323E;
+  color: #F6F2E6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset table:not([class]) tr {
+  border-color: #2E3F49;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset table:not([class]) tr:hover {
+  background: rgba(186, 216, 230, 0.06);
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset code {
+  background: #22323E;
+  color: #E9E4D6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset pre > code {
+  background: #15222B;
+  color: #E9E4D6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="aau-dark"] .aau-card {
+  background: #1B2A34;
+  border-color: #2E3F49;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .grid.cards > ul > li:hover {
+  border-color: #D9A56E;
+}
+
+/* 深色模式下 Hero 按钮文字 */
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-btn--solid {
+  background: #F1ECDC;
+  color: #1E4260;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-btn--solid:hover {
+  background: #FFFFFF;
+  color: #16324A;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-btn--ghost {
+  background: transparent;
+  color: #F1ECDC;
+  border-color: rgba(241, 236, 220, 0.55);
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-hero p,
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-hero h1,
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-hero .aau-tagline {
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-hero p.aau-sub {
+  color: rgba(241, 236, 220, 0.75);
+}
+
+/* 深色模式：提示块标题用浅色，保证对比度 */
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.note > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.info > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.tip > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset details.note > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.info > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.tip > summary {
+  color: #D3E8F4;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.warning > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.caution > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.attention > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset details.warning > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.caution > summary {
+  color: #F2C08C;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.danger > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.failure > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset details.danger > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.failure > summary {
+  color: #F3B0A1;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.success > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.example > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset details.success > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.example > summary {
+  color: #D6E3D3;
 }
 
 /* ── 全局排版 ── */
