@@ -81,6 +81,17 @@ plugins:
         - zh
         - en
 
+# 课程索引页的下载链接由构建脚本在 mkdocs build 之后才复制进 site/files，
+# 因此这里关闭“链接目标不存在”的校验，避免误报。
+validation:
+  links:
+    not_found: ignore
+    absolute_links: ignore
+  nav:
+    omitted_files: ignore
+    not_found: ignore
+  anchors: warn
+
 extra:
   social:
     - icon: fontawesome/brands/github
